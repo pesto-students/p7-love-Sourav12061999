@@ -10,21 +10,26 @@ body{
 .container{
     width: 100%;
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
 }
 aside {
     width: 50px;
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 main {
     width: calc(100% - 50px);
 }
 .header{
-    height: 300px;
+    height: 200px;
     background-color: #616161;
     display: flex;
     padding: 20px 3%;
     color: white;
+    margin-bottom: 20px;
 }
 .header>div {
     margin-left: 20px;
@@ -43,4 +48,46 @@ main {
 }
 .header-btn>div {
     width: 100px;
+}
+.table {
+    min-height: calc(100% - 210px);
+    width: 100%;
+    padding-inline: 2%;
+}
+.table>div {
+    display: flex;
+    width: 100%;
+    padding-inline: 1%;
+}
+.table>div>div {
+    width: 25%;
+    padding-block: 15px;
+    font-weight: 900;
+}
+.table>div:nth-child(2n){
+  background-color: #eeeeee;
+}
+
+footer {
+    height: 80px;
+    background-color: #546e7a;
+    padding-inline: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+.banner img {
+    height: 80%;
+    margin-right: 10px;
+}
+.icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
