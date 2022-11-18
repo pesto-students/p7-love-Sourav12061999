@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            margin-inline: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container>div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .red {
+            background-color: red;
+            top: 0px;
+            left: 0%;
+            transform-origin: bottom left;
+            transition: all 0.5s ease-in;
+        }
+
+        .yellow {
+            background-color: yellow;
+            top: 0px;
+            left: 50%;
+            transform-origin: bottom right;
+            transition: all 0.5s ease-in;
+        }
+
+        .blue {
+            background-color: blue;
+            top: 50%;
+            left: 0px;
+            transform-origin: top left;
+            transition: all 0.5s ease-in;
+        }
+
+        .green {
+            background-color: green;
+            top: 50%;
+            left: 50%;
+            transform-origin: top right;
+            transition: all 0.5s ease-in;
+        }
+
+        .container:hover>.red {
+            transform: rotateZ(-90deg);
+        }
+
+        .container:hover>.yellow {
+            transform: rotateZ(90deg);
+        }
+
+        .container:hover>.blue {
+            transform: rotateZ(90deg);
+        }
+
+        .container:hover>.green {
+            transform: rotateZ(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hi</h1>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+    </div>
+</body>
+
+</html>
