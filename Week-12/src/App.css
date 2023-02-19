@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.is-dark-mode-true{
+  background-color: black;
+  color: white;
+}
+
+.is-dark-mode-false{
+  background-color: white;
+  color: black;
+}
+
+.mode-changer{
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+  margin-inline: auto;
+}
